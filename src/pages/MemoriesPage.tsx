@@ -3,14 +3,20 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import FloatingAnimations from "@/components/FloatingAnimations";
 import MusicPlayer from "@/components/MusicPlayer";
+import memory1 from "@/assets/memories/memory1.jpg";
+import memory2 from "@/assets/memories/memory2.jpg";
+import memory3 from "@/assets/memories/memory3.jpg";
+import memory4 from "@/assets/memories/memory4.jpg";
 
 const MemoriesPage = () => {
   const navigate = useNavigate();
 
-  // Placeholder images - replace with actual images
+  // Memory images - add more images to src/assets/memories/ folder
+  const memoryImages = [memory1, memory2, memory3, memory4];
+  
   const memories = Array.from({ length: 19 }, (_, i) => ({
     id: i + 1,
-    url: `https://images.unsplash.com/photo-${1500000000000 + i * 100000000}?w=400&h=400&fit=crop`,
+    url: memoryImages[i % memoryImages.length],
     alt: `Memory ${i + 1}`,
   }));
 
