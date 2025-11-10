@@ -22,7 +22,7 @@ const MemoriesPage = () => {
       <div className="max-w-6xl mx-auto space-y-8 relative z-10">
         <div className="text-center space-y-4 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground">
-            Our Beautiful Memories 📸
+            Beautiful Memories 📸
           </h1>
           <p className="text-xl text-muted-foreground">
             Every moment with you is a treasure
