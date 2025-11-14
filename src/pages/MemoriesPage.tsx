@@ -26,7 +26,7 @@ const MemoriesPage = () => {
   { id: 6, url: img6, desc: "apa tension aagi silent aayidra apdi iruka kudathu and naa advice panna ketukanum 😌 Yes Good girl 😁" },
   { id: 7, url: img7, desc: "summa summa katha la kudathu " },
   { id: 8, url: img8, desc: "Venum ne nk la soli ena verupethuru vela la vachukatha pa solita aprmm 🤔" },
-  { id: 9, url: img9, desc: "once again Happy 😁 Birthday 😁😁 Shanthiniii 🐾😁" },
+  { id: 9, url: img9, desc: "U R my bestest friend and ithu ipdiye continue aaganum life long I wish 🤞🏻for it 💪🏻 and once again Happy 😁 Birthday 😁😁 Shanthiniii 🐾😁" },
 ];
 
   return (

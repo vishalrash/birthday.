@@ -43,6 +43,11 @@ Stay the same amazing, strong, beautiful soul you are.
               <p className="text-xl font-semibold text-primary group-hover:scale-105 transition-transform inline-block">
                 Here's to another year of wonderful memories together! 🎉
               </p>
+
+              <p className="text-xl font-semibold text-primary group-hover:scale-105 transition-transform inline-block">
+               My forever favourite human! 💕✨
+Happy Birthday Shanthini ! 🎉🎂💫
+              </p>
             </div>
           </div>
         </Card>
