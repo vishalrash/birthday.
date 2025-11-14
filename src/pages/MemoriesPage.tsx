@@ -1,4 +1,4 @@
-import "../blueHearts.css";
+import "../assets/bluehearts.css";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import FloatingAnimations from "@/components/FloatingAnimations";
