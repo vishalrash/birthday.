@@ -15,44 +15,44 @@ const FloatingAnimations = () => {
   useEffect(() => {
     const floatingItems: FloatingItem[] = [];
     
-    // Create cats
-    for (let i = 0; i < 4; i++) {
+    // Create many more cats (12 instead of 4)
+    for (let i = 0; i < 12; i++) {
       floatingItems.push({
         id: floatingItems.length,
         type: "cat",
         style: {
-          top: `${Math.random() * 80 + 10}%`,
+          top: `${Math.random() * 90 + 5}%`,
           left: `-100px`,
-          animationDelay: `${i * 15}s`,
-          animationDuration: `${40 + Math.random() * 20}s`,
+          animationDelay: `${i * 8}s`,
+          animationDuration: `${35 + Math.random() * 25}s`,
         },
       });
     }
 
-    // Create kitkats
-    for (let i = 0; i < 4; i++) {
+    // Create many more kitkats (12 instead of 4)
+    for (let i = 0; i < 12; i++) {
       floatingItems.push({
         id: floatingItems.length,
         type: "kitkat",
         style: {
-          top: `${Math.random() * 80 + 10}%`,
+          top: `${Math.random() * 90 + 5}%`,
           left: `-100px`,
-          animationDelay: `${i * 18}s`,
-          animationDuration: `${45 + Math.random() * 20}s`,
+          animationDelay: `${i * 9}s`,
+          animationDuration: `${40 + Math.random() * 25}s`,
         },
       });
     }
 
-    // Create clouds
-    for (let i = 0; i < 6; i++) {
+    // Create many more clouds (15 instead of 6)
+    for (let i = 0; i < 15; i++) {
       floatingItems.push({
         id: floatingItems.length,
         type: "cloud",
         style: {
-          top: `${Math.random() * 70 + 5}%`,
+          top: `${Math.random() * 85 + 5}%`,
           left: `-200px`,
-          animationDelay: `${i * 10}s`,
-          animationDuration: `${50 + Math.random() * 30}s`,
+          animationDelay: `${i * 6}s`,
+          animationDuration: `${45 + Math.random() * 35}s`,
         },
       });
     }

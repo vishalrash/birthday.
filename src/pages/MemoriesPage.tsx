@@ -12,10 +12,15 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import FloatingAnimations from "@/components/FloatingAnimations";
 import MusicPlayer from "@/components/MusicPlayer";
+import memory1 from "@/assets/memories/memory1.jpg";
+import memory2 from "@/assets/memories/memory2.jpg";
+import memory3 from "@/assets/memories/memory3.jpg";
+import memory4 from "@/assets/memories/memory4.jpg";
 
 const MemoriesPage = () => {
   const navigate = useNavigate();
 
+<<<<<<< HEAD
   // Add descriptions for zig-zag layout
   const memories = [
   { id: 1, url: img1, desc: "Happy birthday shanthini buddy 🫂 hope u will shine this year too " },
@@ -28,6 +33,16 @@ const MemoriesPage = () => {
   { id: 8, url: img8, desc: "Venum ne nk la soli ena verupethuru vela la vachukatha pa solita aprmm 🤔" },
   { id: 9, url: img9, desc: "U R my bestest friend and ithu ipdiye continue aaganum life long I wish 🤞🏻for it 💪🏻 and once again Happy 😁 Birthday 😁😁 Shanthiniii 🐾😁" },
 ];
+=======
+  // Memory images - add more images to src/assets/memories/ folder
+  const memoryImages = [memory1, memory2, memory3, memory4];
+  
+  const memories = Array.from({ length: 19 }, (_, i) => ({
+    id: i + 1,
+    url: memoryImages[i % memoryImages.length],
+    alt: `Memory ${i + 1}`,
+  }));
+>>>>>>> 70cc2b1b0c52f6ca696514cc756a625f6cb9b672
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-sky-200 via-blue-100 to-background p-4 md:p-8 relative overflow-hidden">
@@ -56,7 +71,11 @@ const MemoriesPage = () => {
         
         <div className="text-center space-y-4 animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground">
+<<<<<<< HEAD
             YOUR MEMORIES
+=======
+            Beautiful Memories 📸
+>>>>>>> 70cc2b1b0c52f6ca696514cc756a625f6cb9b672
           </h1>
           <p className="text-xl text-muted-foreground">
             Every moment you've created
