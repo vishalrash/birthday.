@@ -1,3 +1,10 @@
+import "../blueHearts.css";
+import { useNavigate } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import FloatingAnimations from "@/components/FloatingAnimations";
+import MusicPlayer from "@/components/MusicPlayer";
+
+// Import ALL images
 import img1 from "../assets/memories/img1.jpg";
 import img2 from "../assets/memories/img2.jpg";
 import img3 from "../assets/memories/img3.jpg";
@@ -7,42 +14,22 @@ import img6 from "../assets/memories/img6.jpg";
 import img7 from "../assets/memories/img7.jpg";
 import img8 from "../assets/memories/img8.jpg";
 import img9 from "../assets/memories/img9.jpg";
-import "../blueHearts.css";
-import { useNavigate } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import FloatingAnimations from "@/components/FloatingAnimations";
-import MusicPlayer from "@/components/MusicPlayer";
-import memory1 from "@/assets/memories/memory1.jpg";
-import memory2 from "@/assets/memories/memory2.jpg";
-import memory3 from "@/assets/memories/memory3.jpg";
-import memory4 from "@/assets/memories/memory4.jpg";
 
 const MemoriesPage = () => {
   const navigate = useNavigate();
 
-<<<<<<< HEAD
-  // Add descriptions for zig-zag layout
+  // Use your 9 images + descriptions
   const memories = [
-  { id: 1, url: img1, desc: "Happy birthday shanthini buddy 🫂 hope u will shine this year too " },
-  { id: 2, url: img2, desc: "Madam linkedin ku matum nalla pose tharenga aana nerla pose ey koduka sonna teriyatha maari nikkuriye bruhh 😂" },
-  { id: 3, url: img3, desc: "My cute bestie ena venalum enta kelu I'll doing it for u no matter what athuku nu elathaiyum ketu tholaikadha ri 😅 naa seiya maate aprom 😼" },
-  { id: 4, url: img4, desc: "Apdiye neeyu enaku assignments la eluthi kodukanum 😁 bcoz nee thana en frd uu 😝" },
-  { id: 5, url: img5, desc: "Aprm naa solratha la kelu 😂 keka maate nu la sola kudathu 🤫 athuum enta solave kudathuu" },
-  { id: 6, url: img6, desc: "apa tension aagi silent aayidra apdi iruka kudathu and naa advice panna ketukanum 😌 Yes Good girl 😁" },
-  { id: 7, url: img7, desc: "summa summa katha la kudathu " },
-  { id: 8, url: img8, desc: "Venum ne nk la soli ena verupethuru vela la vachukatha pa solita aprmm 🤔" },
-  { id: 9, url: img9, desc: "U R my bestest friend and ithu ipdiye continue aaganum life long I wish 🤞🏻for it 💪🏻 and once again Happy 😁 Birthday 😁😁 Shanthiniii 🐾😁" },
-];
-=======
-  // Memory images - add more images to src/assets/memories/ folder
-  const memoryImages = [memory1, memory2, memory3, memory4];
-  
-  const memories = Array.from({ length: 19 }, (_, i) => ({
-    id: i + 1,
-    url: memoryImages[i % memoryImages.length],
-    alt: `Memory ${i + 1}`,
-  }));
->>>>>>> 70cc2b1b0c52f6ca696514cc756a625f6cb9b672
+    { id: 1, url: img1, desc: "Happy birthday shanthini buddy 🫂 hope u will shine this year too " },
+    { id: 2, url: img2, desc: "Madam LinkedIn-ku matum nalla pose tharenga, aana nerla pose koduka sonna teriyatha maari nikkuriye bruhh 😂" },
+    { id: 3, url: img3, desc: "My cute bestie 😁 whatever you ask, I'll do for you — but athuku nu ellathiyum ketu tholaikadha di 😅" },
+    { id: 4, url: img4, desc: "Apdiye neeyum enakku assignments la eluthi kodukkanum 😝 because nee thaan en friend uu 😁" },
+    { id: 5, url: img5, desc: "Apram naa solvatha kelu 😂 ‘keka maate’ nu sollakudadhu 🤫 athukum entha solratha kooda kudathu" },
+    { id: 6, url: img6, desc: "Silent ah iruka kudathu… mood off aana sollu 😌 naa advice panna ketukanum 😁 good girl 😁" },
+    { id: 7, url: img7, desc: "Summa drama panna kudadhu 😂" },
+    { id: 8, url: img8, desc: "Venum nu nk la solli enna verupethura vela la vachu kadhura 🤨😂" },
+    { id: 9, url: img9, desc: "You are my bestest friend 😁 and this bond must continue lifelong 🤞🏻 Happy Birthday Shanthiniii 🐾😁" },
+  ];
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-sky-200 via-blue-100 to-background p-4 md:p-8 relative overflow-hidden">
@@ -51,7 +38,7 @@ const MemoriesPage = () => {
       <FloatingAnimations />
       <MusicPlayer autoPlay />
 
-      {/* Floating Blue Hearts Background */}
+      {/* Floating Hearts */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(15)].map((_, i) => (
           <div
@@ -66,23 +53,15 @@ const MemoriesPage = () => {
         ))}
       </div>
 
-      {/* MAIN SECTION */}
-      <div className="max-w-6xl mx-auto space-y-8 relative z-20">
-        
-        <div className="text-center space-y-4 animate-fade-in">
-          <h1 className="text-4xl md:text-5xl font-bold text-foreground">
-<<<<<<< HEAD
-            YOUR MEMORIES
-=======
-            Beautiful Memories 📸
->>>>>>> 70cc2b1b0c52f6ca696514cc756a625f6cb9b672
-          </h1>
-          <p className="text-xl text-muted-foreground">
-            Every moment you've created
-          </p>
+      {/* Page content */}
+      <div className="max-w-6xl mx-auto space-y-12 relative z-20">
+
+        <div className="text-center space-y-4">
+          <h1 className="text-4xl md:text-5xl font-bold">Beautiful Memories 📸</h1>
+          <p className="text-xl text-muted-foreground">Every moment with you is precious ✨</p>
         </div>
 
-        {/* ZIG-ZAG MEMORIES LIST */}
+        {/* Zig-Zag Layout */}
         <div className="flex flex-col gap-12">
           {memories.map((memory, index) => (
             <div
@@ -91,29 +70,26 @@ const MemoriesPage = () => {
                 index % 2 === 0 ? "" : "md:flex-row-reverse"
               }`}
             >
-              {/* Image */}
               <img
                 src={memory.url}
-                className="w-[260px] h-[260px] object-cover rounded-2xl shadow-xl hover:scale-105 transition-all duration-500 border-4 border-blue-300"
-                alt="memory"
+                className="w-[260px] h-[260px] object-cover rounded-2xl shadow-xl border-4 border-blue-300 hover:scale-105 transition-all"
+                alt={`Memory ${memory.id}`}
               />
 
-              {/* Description */}
-              <p className="text-lg md:text-xl text-foreground/90 max-w-md text-center md:text-left">
+              <p className="text-lg md:text-xl max-w-md text-center md:text-left">
                 {memory.desc}
               </p>
             </div>
           ))}
         </div>
 
-        {/* BUTTON */}
-        <div className="flex justify-center pt-8 animate-fade-in">
+        <div className="flex justify-center pt-8">
           <Button
             onClick={() => navigate("/thank-you")}
             size="lg"
-            className="text-lg px-8 py-6 font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105"
+            className="text-lg px-8 py-6 font-semibold shadow-lg hover:scale-105"
           >
-            Continue to Final Message 
+            Continue to Final Message 💌
           </Button>
         </div>
 
