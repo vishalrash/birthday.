@@ -21,18 +21,23 @@ const BirthdayMessagePage = () => {
             
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p className="group-hover:text-foreground transition-colors">
-                On this beautiful day, I want you to know how incredibly special you are. 
-                Your smile lights up every room, and your kindness touches everyone around you.
+                Happiest birthday to the bestest best friend ever! 💖
+You’re the one who brings laughter to my dull days, comfort to my messy moments, and joy to every memory we create.
+
               </p>
               
               <p className="group-hover:text-foreground transition-colors">
-                Thank you for being such an amazing friend and bringing so much joy into my life. 
-                Your presence makes every moment better, and I'm so grateful to celebrate this special day with you!
+                Thank you for being the girl who understands me without needing words, supports me without conditions, and stays by my side no matter what.
+
               </p>
               
               <p className="group-hover:text-foreground transition-colors">
-                May this year bring you endless happiness, exciting adventures, and all the love you deserve. 
-                You deserve nothing but the best because you ARE the best! 🌟
+                On your special day, I just want you to know this:
+You deserve all the happiness, love, success, and magic in the world — today and always.
+
+May this year bless you with everything your heart silently wishes for.
+Stay the same amazing, strong, beautiful soul you are.
+
               </p>
               
               <p className="text-xl font-semibold text-primary group-hover:scale-105 transition-transform inline-block">
@@ -48,11 +53,11 @@ const BirthdayMessagePage = () => {
             size="lg"
             className="text-lg px-8 py-6 font-semibold shadow-lg hover:shadow-xl transition-all hover:scale-105"
           >
-            See Our Memories 📸
+            See Your Memories 📸
           </Button>
         </div>
       </div>
-    </div>
+    </div> 
   );
 };
 

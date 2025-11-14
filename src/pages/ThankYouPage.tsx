@@ -22,21 +22,26 @@ const ThankYouPage = () => {
             
             <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
               <p>
-                As we close this special journey, I want to express my deepest gratitude 
-                for having you in my life. Your friendship, guidance, and constant support 
-                have meant the world to me.
+                Having you in my life is one of the quiet blessings I’m truly grateful for.
+There’s something about your presence , something calm, kind, and wonderfully genuine ...
+that makes everything feel a little lighter and a lot more beautiful.
               </p>
               
               <p>
-                Through every laugh, every adventure, and even the challenging times, 
-                you've been there with your unwavering presence and beautiful spirit. 
-                Your kindness and wisdom have guided me in ways I can't fully express.
+                You’ve stood by me with patience, warmth, and a heart that understands even the things I don’t say.
+Your friendship hasn’t just added joy to my days —
+it has added meaning, comfort, and a sense of belonging that I value so deeply.
+
               </p>
               
               <p>
-                Thank you for staying by my side, for believing in me, and for making 
-                life so much more meaningful. You are truly one of a kind, and I'm 
-                blessed to call you my friend.
+                Thank you for the moments you made brighter,
+for the random conversations that felt like healing,
+and for being the kind of person who turns ordinary days into memories I’ll always smile about.
+
+I’m blessed to walk through life with someone as gentle, strong, and truly special as you.
+And I hope the years ahead bring you all the happiness you naturally bring to everyone around you. ✨
+
               </p>
               
               <p className="text-2xl font-bold text-primary pt-4">

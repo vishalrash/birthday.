@@ -14,7 +14,7 @@ const PasswordPage = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Change this password to whatever you want
-    if (password === "happybirthday") {
+    if (password === "SHANTHINI" || password === "shanthini") {
       navigate("/birthday-wish");
     } else {
       toast.error("Oops! Wrong password. Try again! 🎂");

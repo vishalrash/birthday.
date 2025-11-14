@@ -47,7 +47,7 @@ const MusicPlayer = ({ autoPlay = false }: MusicPlayerProps) => {
       <audio
         ref={audioRef}
         loop
-        src="https://cdn.pixabay.com/download/audio/2022/03/10/audio_4d49d92f92.mp3"
+        src="src/assets/Nanbiye-MassTamilan.io.mp3"
       />
     </div>
   );
