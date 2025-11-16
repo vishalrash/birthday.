@@ -1,33 +1,30 @@
-import { useState, useRef, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Pause, Play } from "lucide-react";
 
-interface MusicPlayerProps {
-  autoPlay?: boolean;
-}
-
-const MusicPlayer = ({ autoPlay = false }: MusicPlayerProps) => {
-  const [isPlaying, setIsPlaying] = useState(autoPlay);
-  const audioRef = useRef<HTMLAudioElement>(null);
+const MusicPlayer = ({ autoPlay = false }) => {
+  const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
-    if (audioRef.current && autoPlay) {
-      audioRef.current.play().catch((error) => {
-        console.log("Autoplay prevented:", error);
-        setIsPlaying(false);
-      });
+    const audio = document.getElementById("global-music") as HTMLAudioElement;
+    if (!audio) return;
+
+    if (autoPlay) {
+      audio.play().catch(() => {});
+      setIsPlaying(true);
     }
-  }, [autoPlay]);
+  }, []);
 
   const togglePlay = () => {
-    if (audioRef.current) {
-      if (isPlaying) {
-        audioRef.current.pause();
-      } else {
-        audioRef.current.play();
-      }
-      setIsPlaying(!isPlaying);
+    const audio = document.getElementById("global-music") as HTMLAudioElement;
+    if (!audio) return;
+
+    if (isPlaying) {
+      audio.pause();
+    } else {
+      audio.play();
     }
+    setIsPlaying(!isPlaying);
   };
 
   return (
@@ -36,12 +33,9 @@ const MusicPlayer = ({ autoPlay = false }: MusicPlayerProps) => {
         onClick={togglePlay}
         size="icon"
         className="rounded-full bg-primary/90 hover:bg-primary shadow-lg backdrop-blur-sm transition-all hover:scale-110"
-        aria-label={isPlaying ? "Pause music" : "Play music"}
       >
-        {isPlaying ? <Pause className="h-5 w-5" /> : <Play className="h-5 w-5 ml-0.5" />}
+        {isPlaying ? <Pause className="h-5 w-5" /> : <Play className="h-5 w-5" />}
       </Button>
-
-      <audio ref={audioRef} loop src="/Nanbiye-MassTamilan.io.mp3" />
     </div>
   );
 };
