@@ -9,6 +9,8 @@ import BirthdayMessagePage from "./pages/BirthdayMessagePage";
 import MemoriesPage from "./pages/MemoriesPage";
 import ThankYouPage from "./pages/ThankYouPage";
 import NotFound from "./pages/NotFound";
+import MusicPlayer from "@/components/MusicPlayer";
+<MusicPlayer autoPlay={false} />
 
 const queryClient = new QueryClient();
 

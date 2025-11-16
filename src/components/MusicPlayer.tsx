@@ -38,17 +38,10 @@ const MusicPlayer = ({ autoPlay = false }: MusicPlayerProps) => {
         className="rounded-full bg-primary/90 hover:bg-primary shadow-lg backdrop-blur-sm transition-all hover:scale-110"
         aria-label={isPlaying ? "Pause music" : "Play music"}
       >
-        {isPlaying ? (
-          <Pause className="h-5 w-5" />
-        ) : (
-          <Play className="h-5 w-5 ml-0.5" />
-        )}
+        {isPlaying ? <Pause className="h-5 w-5" /> : <Play className="h-5 w-5 ml-0.5" />}
       </Button>
-      <audio
-        ref={audioRef}
-        loop
-        src="src/assets/Nanbiye-MassTamilan.io.mp3"
-      />
+
+      <audio ref={audioRef} loop src="/Nanbiye-MassTamilan.io.mp3" />
     </div>
   );
 };
